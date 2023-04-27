@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+body {
+  background: rgb(2,82,81);
+  background: linear-gradient(90deg, rgba(2,82,81,1) 0%, rgba(6,140,252,1) 22%, rgba(215,215,215,1) 100%);
+  margin-left: 0px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr 0.3fr 1.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header information"
+    "contact experience"
+    "projects experience";
+}
+
+.header { grid-area: header; }
+
+.information { grid-area: information; }
+
+.contact { grid-area: contact; }
+
+.experience { grid-area: experience; }
+
+.projects { grid-area: projects; }
+
+
+
+/* Estilos a partir de acá */
+
+.header{
+  border-bottom-right-radius: 5px;
+  margin-left: 0px;
+  background-color: hsla(0, 0%, 89%, 0.5);
+}
+
+.imagenfoto {
+  background-color:red;
+}
+
+.contact {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: hsla(0, 0%, 89%, 0.5);
+}
+
+.redes a{
+  margin-left:25px;
+}
+
+.presentacion{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagenfoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 83px;
+  margin-top: 10px;
+}
+
+.information h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.information {
+  margin-left: 25px;
+  border-bottom-left-radius: 5px;
+  background-color: hsla(0, 0%, 89%, 0.5);
+}
+
+.information p {
+  margin-left: 60px;
+  margin-right:10px;
+}
+
+.experience {
+  margin-top: 25px;
+  margin-left: 25px;
+  border-top-left-radius: 5px;
+  background-color: hsla(0, 0%, 89%, 0.5);
+}
+
+.projects {
+  margin-top: 25px;
+  background-color: hsla(0, 0%, 89%, 0.5);
+  border-top-right-radius: 5px;
+}
+
+.experience p{
+  margin-left: 60px;
+  margin-right:10px;
+}
+
+.experience h1 {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects p{
+  margin-right: 30px;
+  margin-left:10px;
+}
+
+.projects h1 {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hovredes:hover {
+  transform: scale(1.5);
+}
+
